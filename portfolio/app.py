@@ -1,9 +1,9 @@
-from flask import Flask,render_template
+from flask import Flask, Blueprint, render_template, redirect, url_for, request
 
 def create_app():
     app = Flask(__name__)
-  return app
 
-@app.route("/")
-def hello_world():
-  return render_template('base.html')
+    from .main import main as main_blueprint
+    app.register_blueprint(main_blueprint)
+
+    return app
