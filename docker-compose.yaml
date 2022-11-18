@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  app:
+    container_name: flask_portfolio_app
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - '5000:5000'
+    env_file:
+      - app.env
+    command: "flask run --port='5000'"
