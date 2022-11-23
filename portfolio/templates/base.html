@@ -2,15 +2,22 @@
 
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" context="IE=edge">
     <meta name="viewport" context="width=device-width, initial-scale=1">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"/>
+    <script defer src="https://use.fontawesome.com/releases/v6.2.1/js/all.js"></script>
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .emoticon { white-space: pre; }
+    </style>
 </head>
-
 <body>
     <section class="hero is-primary">
         <div class="hero-head">
@@ -21,6 +28,9 @@
                             <a href="{{ url_for('main.index') }}" class="navbar-item">
                                 Home
                             </a>
+                            <a href="{{ url_for('main.portfolio') }}" class="navbar-item">
+                                Portfolio
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -30,11 +40,12 @@
     <section class="hero is-primary is-fullheight">
         <div class="hero-body">
             <div class="container has-text-centered">
-                {% block content %}
+                {% block content_1 %}
+                {% endblock %}
+                {% block content_2 %}
                 {% endblock %}
             </div>
         </div>
     </section>
 </body>
-
 </html>
