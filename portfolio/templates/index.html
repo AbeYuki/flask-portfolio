@@ -1,20 +1,15 @@
 {% extends "base.html" %}
 {% block content_1 %}
-<!-- .section -->
+<!--PC section -->
 <section class="section">
 	<div class="container">
 		<div class="columns">
 			<div class="column">
 				<article class="media notification is-info">
-					<figure class="media-left">
-						<span class="icon is-medium">
-							<i class="fa-regular fa-user"></i>
-						</span>
-					</figure>
 					<div class="media-content">
 						<div class="content">
 							<h1 class="title is-size-4">ABOUT</h1>
-							<p class="is-size-5">
+							<p class="is-size-6">
 								AWS, Kubernetes, Docker を得意としています。<br>
 								好きなプロダクトは AWS, Kubernetes, Docker, Grafana, GitLab, Ansible, Terraform, Argo CD, CircleCI です。<br>
 								クラウド、コンテナ管理、CI/CD, SRE, DevOps, IaC, アジャイル当の分野でシナジーとより良い価値を提供できるように取り組んでいます。<br>
@@ -22,18 +17,11 @@
 						</div>
 					</div>
 				</article>
-			</div>
-			<div class="column">
 				<article class="media notification is-warning">
-					<figure class="media-left">
-						<span class="icon is-medium">
-							<i class="fas fa-2x fa-align-justify"></i>
-						</span>
-					</figure>
 					<div class="media-content">
 						<div class="content">
 							<h1 class="title is-size-4">SKILLS</h1>
-							<p class="is-size-5">
+							<p class="is-size-6">
 								Kubernetes<br>
 								Docker<br>
 								Public Cloud (AWS)<br>
@@ -51,14 +39,10 @@
 		</div>
 	</div>
 </section>
-<!-- /.section -->
-{% endblock %}
-{% block content_2 %}
-<!-- .section -->
 <section class="section">
-	<div class="container">
+	<div class="container ">
 		<div class="columns">
-			<div class="column">
+			<div class="column is-one-third">
 				<article class="media notification has-background-white">
 					<figure class="media-left">
 						<span class="icon">
@@ -71,6 +55,21 @@
 							<p class="is-size-5 has-text-black">
 								<p>技術ブログ: <a href="https://www.aimhighergg.com/" target="_blank" rel="noopener noreferrer">AimHigherGG</a></p>
 								<p>ナレッジWikiサイト: <a href="https://www.aimhighergg.com/wiki/" target="_blank" rel="noopener noreferrer">Tips</a></p>
+							</p>
+						</div>
+					</div>
+				</article>
+				<article class="media notification has-background-white">
+					<figure class="media-left">
+						<span class="icon">
+							<i class="fas fa-lg fa-cogs has-text-grey"></i>
+						</span>
+					</figure>
+					<div class="media-content">
+						<div class="content">
+							<h1 class="title is-size-4">Modifiers</h1>
+							<p class="subtitle is-size-5">
+								An <strong>easy-to-read</strong> naming system designed for humans
 							</p>
 						</div>
 					</div>
@@ -92,63 +91,6 @@
 						</div>
 					</div>
 				</article>
-			</div>
-			<div class="column is-one-third">
-				<article class="media notification has-background-white">
-					<figure class="media-left">
-						<span class="icon">
-							<i class="fas fa-lg fa-cubes has-text-danger"></i>
-						</span>
-					</figure>
-					<div class="media-content">
-						<div class="content">
-							<h1 class="title is-size-4">Components</h1>
-							<p class="subtitle is-size-5">
-								Advanced multi-part components with lots of possibilities
-							</p>
-						</div>
-					</div>
-				</article>
-				<article class="media notification has-background-white">
-					<figure class="media-left">
-						<span class="icon">
-							<i class="fas fa-lg fa-cubes has-text-danger"></i>
-						</span>
-					</figure>
-					<div class="media-content">
-						<div class="content">
-							<h1 class="title is-size-4">Components</h1>
-							<p class="subtitle is-size-5">
-								Advanced multi-part components with lots of possibilities
-							</p>
-						</div>
-					</div>
-				</article>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="section">
-	<div class="container">
-		<div class="columns">			
-			<div class="column is-one-third">
-				<article class="media notification has-background-white">
-					<figure class="media-left">
-						<span class="icon">
-							<i class="fas fa-lg fa-cogs has-text-grey"></i>
-						</span>
-					</figure>
-					<div class="media-content">
-						<div class="content">
-							<h1 class="title is-size-4">Modifiers</h1>
-							<p class="subtitle is-size-5">
-								An <strong>easy-to-read</strong> naming system designed for humans
-							</p>
-						</div>
-					</div>
-				</article>
-			</div>
-			<div class="column is-one-third">
 				<article class="media notification has-background-white">
 					<figure class="media-left">
 						<span class="icon">
@@ -169,6 +111,21 @@
 				<article class="media notification has-background-white">
 					<figure class="media-left">
 						<span class="icon">
+							<i class="fas fa-lg fa-cubes has-text-danger"></i>
+						</span>
+					</figure>
+					<div class="media-content">
+						<div class="content">
+							<h1 class="title is-size-4">Components</h1>
+							<p class="subtitle is-size-5">
+								Advanced multi-part components with lots of possibilities
+							</p>
+						</div>
+					</div>
+				</article>
+				<article class="media notification has-background-white">
+					<figure class="media-left">
+						<span class="icon">
 							<i class="fas fa-lg fa-cube has-text-danger"></i>
 						</span>
 					</figure>
@@ -186,4 +143,8 @@
 	</div>
 </section>
 <!-- /.section -->
+{% endblock %}
+{% block content_2 %}
+<!-- .section -->
+
 {% endblock %}
