@@ -1,37 +1,88 @@
 {% extends "base.html" %}
-{% block content_1 %}
-<!--PC section -->
+{% block index %}
 <section class="section">
 	<div class="container">
 		<div class="columns">
 			<div class="column">
-				<article class="media notification is-info">
-					<div class="media-content">
-						<div class="content">
-							<h1 class="title is-size-4">ABOUT</h1>
-							<p class="is-size-6">
-								AWS, Kubernetes, Docker を得意としています。<br>
-								好きなプロダクトは AWS, Kubernetes, Docker, Grafana, GitLab, Ansible, Terraform, Argo CD, CircleCI です。<br>
-								クラウド、コンテナ管理、CI/CD, SRE, DevOps, IaC, アジャイル当の分野でシナジーとより良い価値を提供できるように取り組んでいます。<br>
-							</p>
+				<div class="brock">
+					<article class="media notification is-white">
+						<div class="media-content">
+							<div class="content">
+								<h1 class="title is-size-4">ABOUT</h1>
+								<p class="is-size-6">
+									AWS, Kubernetes, Docker を得意としています。<br>
+									好きなプロダクトは AWS, Kubernetes, Docker, Grafana, GitLab, Ansible, Terraform, Argo CD, CircleCI です。<br>
+									クラウド、コンテナ管理、CI/CD, SRE, DevOps, IaC, アジャイル当の分野でシナジーとより良い価値を提供できるように取り組んでいます。<br>
+								</p>
+							</div>
 						</div>
-					</div>
-				</article>
-				<article class="media notification is-warning">
+					</article>
+				</div>
+				<div class="brock">
+					<article class="media notification has-background-white">
+						<div class="media-content">
+							<div class="content has-text-black">
+								<h1 class="title is-size-4">SKILLS</h1>
+								<div class="brock">
+									<div class="column">
+										<article class="media notification has-background-white">
+											<figure class="media-left">
+												<span class="icon">
+													<i class="fas fa-lg fa-columns has-text-warning"></i>
+												</span>
+											</figure>
+											<div class="media-content">
+												<div class="content has-text-black">
+													<h1 class="title is-size-4 has-text-black">Kubernetes</h1>
+													<p class="is-size-5 has-text-black">
+														kubernets<progress class="progress is-success" value="60" max="100">60%</progress>
+														<p>ナレッジWikiサイト: <a href="https://www.aimhighergg.com/wiki/" target="_blank" rel="noopener noreferrer">Tips</a></p>
+													</p>
+												</div>
+											</div>
+										</article>
+										<article class="media notification has-background-white">
+											<figure class="media-left">
+												<span class="icon">
+													<i class="fas fa-lg fa-cogs has-text-grey"></i>
+												</span>
+											</figure>
+											<div class="media-content">
+												<div class="content">
+													<h1 class="title is-size-4">Modifiers</h1>
+													<p class="subtitle is-size-5">
+														An <strong>easy-to-read</strong> naming system designed for humans
+													</p>
+												</div>
+											</div>
+										</article>
+									</div>
+								</div>										 
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div class="column is-one-third">
+				<article class="media notification has-background-white">
+					<figure class="media-left">
+						<span class="icon">
+							<i class="fas fa-lg fa-columns has-text-warning"></i>
+						</span>
+					</figure>
 					<div class="media-content">
-						<div class="content">
-							<h1 class="title is-size-4">SKILLS</h1>
-							<p class="is-size-6">
-								Kubernetes<br>
-								Docker<br>
-								Public Cloud (AWS)<br>
-								IaC(Ansible/Terraform)<br>
-								GitOps(Argo CD)<br>
-								CI/CD(GitLab/CircleCI)<br>
-								Database/KVS(MySQL/InfluxDB/etcd/Redis/etc)<br>
-								Monitoring(Datadog/Prometheus/Loki/Zabbix/telegraf/Grafana)<br>
-								Programming(Python/Powershell/Bash)<br>
-							</p>
+						<div class="content has-text-black">
+							<h1 class="title is-size-4">My Services</h1>
+							<div class="block">
+								<button class="button is-info">
+									<a href="https://www.aimhighergg.com" target="_blank" rel="noopener noreferrer">AimHigherGG</a>
+								</button>
+							</div>
+							<div class="block">
+								<button class="button is-primary">
+									<a href="https://www.aimhighergg.com/wiki/Tips" target="_blank" rel="noopener noreferrer">Tips</a>
+								</button>
+							</div>
 						</div>
 					</div>
 				</article>
@@ -42,6 +93,7 @@
 <section class="section">
 	<div class="container ">
 		<div class="columns">
+			
 			<div class="column is-one-third">
 				<article class="media notification has-background-white">
 					<figure class="media-left">
@@ -107,44 +159,7 @@
 					</div>
 				</article>
 			</div>
-			<div class="column is-one-third">
-				<article class="media notification has-background-white">
-					<figure class="media-left">
-						<span class="icon">
-							<i class="fas fa-lg fa-cubes has-text-danger"></i>
-						</span>
-					</figure>
-					<div class="media-content">
-						<div class="content">
-							<h1 class="title is-size-4">Components</h1>
-							<p class="subtitle is-size-5">
-								Advanced multi-part components with lots of possibilities
-							</p>
-						</div>
-					</div>
-				</article>
-				<article class="media notification has-background-white">
-					<figure class="media-left">
-						<span class="icon">
-							<i class="fas fa-lg fa-cube has-text-danger"></i>
-						</span>
-					</figure>
-					<div class="media-content">
-						<div class="content">
-							<h1 class="title is-size-4">Elements</h1>
-							<p class="subtitle is-size-5">
-								Essential interface elements that only require a <strong>single CSS class</strong>
-							</p>
-						</div>
-					</div>
-				</article>
-			</div>
 		</div>
 	</div>
 </section>
-<!-- /.section -->
-{% endblock %}
-{% block content_2 %}
-<!-- .section -->
-
 {% endblock %}
