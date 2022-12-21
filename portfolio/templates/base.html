@@ -23,6 +23,9 @@
                   <a href="{{ url_for('main.infrastructure') }}" class="navbar-item">
                     Infrastructure
                   </a>
+                  <a href="{{ url_for('main.software') }}" class="navbar-item">
+                    Software
+                  </a>
                   <span class="navbar-item">
                     <a class="button is-primary is-inverted" href="https://github.com/AbeYuki" target="_blank" rel="noopener noreferrer">
                       <span class="icon">
@@ -41,6 +44,8 @@
 {% block index %}
 {% endblock %}
 {% block infrastructure %}
+{% endblock %}
+{% block software %}
 {% endblock %}
 </body>
 </html>

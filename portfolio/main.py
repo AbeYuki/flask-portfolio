@@ -9,3 +9,7 @@ def index():
 @main.route('/infrastructure')
 def infrastructure():
     return render_template('infrastructure.html')
+
+@main.route('/software')
+def software():
+    return render_template('software.html')
