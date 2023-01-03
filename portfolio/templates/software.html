@@ -37,12 +37,28 @@
         <article class="media notification is-white">
           <div class="media-content">
             <div class="content">
+              <h1 class="title is-size-4">Kubernetes</h1>
               <p class="is-size-6">
                 <strong>
-                  Kubernetes 関連についてオンプレミスでは MicroK8s でコンテナ管理を行い、クラウドでは RKE でコンテナ管理を行っています。ボリュームは Longhorn が永続データを支えています。認証局については Let's Encrypt を利用し、 cert-manager で管理しています。<br>
-                  サーバー関連については arm 環境でも稼働する MariaDB をメインのリレーショナルデータベースとして採用しています。<br>
-                  モニタリング関連については Telegraf でリソースを収集し InfluxDB に蓄積しています。Log については Loki を採用しています。cadvisor や promethus 関連の Exporter で各メトリクスを収集し Prometheus に蓄積しています。各データについては Grafana で可視化しています。<br>
-                  ツール関連のところで、 CI については CircleCI を利用しています。CD については ArgoCD で Gitops を取り入れて管理しています。
+                  オンプレミスでは MicroK8s でコンテナ管理を行い、クラウドでは RKE でコンテナ管理を行っています。ボリュームは Longhorn が永続データを支えています。認証局については Let's Encrypt を利用し、 cert-manager で管理しています。
+                </strong>
+              </p>
+              <h1 class="title is-size-4">Server</h1>
+              <p class="is-size-6">
+                <strong>
+                  arm 環境でも稼働する MariaDB をメインのリレーショナルデータベースとして採用しています。
+                </strong>
+              </p>
+              <h1 class="title is-size-4">Monitoring</h1>
+              <p class="is-size-6">
+                <strong>
+                  Telegraf でリソースを収集し InfluxDB に蓄積しています。Log については Loki を採用しています。cadvisor や promethus 関連の Exporter で各メトリクスを収集し Prometheus に蓄積しています。各データについては Grafana で可視化しています。
+                </strong>
+              </p>
+              <h1 class="title is-size-4">Tools</h1>
+              <p class="is-size-6">
+                <strong>
+                  CI については CircleCI を利用しています。CD については ArgoCD で Gitops を取り入れて管理しています。<br>
                   オンプレミスについては Ansible で管理し、クラウドについては Terraform で管理しています。
                 </strong>
               </p>
