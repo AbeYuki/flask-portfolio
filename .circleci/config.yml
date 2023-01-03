@@ -67,6 +67,7 @@ jobs:
       - checkout
       - setup_kubectl
       - setup_kubeconfig
+      - setup_repositry
       - kubernetes/create-or-update-resource:
           kustomize: true
           resource-file-path: kaniko/overlay/flask-portfolio
