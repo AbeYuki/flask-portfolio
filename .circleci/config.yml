@@ -22,7 +22,7 @@ workflows:
       - delete:
           context: kaniko
           requires:
-            - status-db
+            - status-pod
           filters:
             branches:
               only: 
