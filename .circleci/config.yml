@@ -87,7 +87,7 @@ jobs:
             ns=kaniko
             count=1
             while true ;do 
-                if [[ $(kubectl get pods -n $ns --field-selector=status.phase=Completed | awk 'NR>1 {print$3}' | wc -l) -ge ${count} ]] ;then 
+                if [[ $(kubectl get pods -n $ns --field-selector=status.phase=Succeeded | awk 'NR>1 {print$3}' | wc -l) -ge ${count} ]] ;then 
                     echo "pod status OK" ; sleep 3 ; break 
                 else echo "pod status NG" ; sleep 3
                 fi
