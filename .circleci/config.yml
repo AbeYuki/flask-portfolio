@@ -79,6 +79,8 @@ jobs:
       name: default
     steps:
       - checkout
+      - setup_kubectl
+      - setup_kubeconfig
       - run:
           name: "status check"
           command: |
@@ -99,6 +101,7 @@ jobs:
       - checkout
       - setup_kubectl
       - setup_kubeconfig
+      - setup_repositry
       - kubernetes/delete-resource:
           kustomize: true
           now: true
