@@ -13,3 +13,7 @@ def infrastructure():
 @main.route('/portfolio/software')
 def software():
     return render_template('software.html')
+
+@main.route('/portfolio/ci-cd')
+def ci_cd():
+    return render_template('ci-cd.html')

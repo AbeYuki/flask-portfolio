@@ -26,6 +26,9 @@
                   <a href="{{ url_for('main.software') }}" class="navbar-item">
                     Software
                   </a>
+                  <a href="{{ url_for('main.ci_cd') }}" class="navbar-item">
+                    CI/CD
+                  </a>
                   <span class="navbar-item">
                     <a class="button is-primary is-inverted" href="https://github.com/AbeYuki" target="_blank" rel="noopener noreferrer">
                       <span class="icon">
@@ -46,6 +49,8 @@
 {% block infrastructure %}
 {% endblock %}
 {% block software %}
+{% endblock %}
+{% block ci_cd %}
 {% endblock %}
 </body>
 </html>
