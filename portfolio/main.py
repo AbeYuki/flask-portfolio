@@ -10,6 +10,6 @@ def index():
 def infrastructure():
     return render_template('infrastructure.html')
 
-@main.route('/portfolio//software')
+@main.route('/portfolio/software')
 def software():
     return render_template('software.html')
