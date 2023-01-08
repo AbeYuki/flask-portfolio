@@ -9,39 +9,73 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"/>
     <script defer src="https://use.fontawesome.com/releases/v6.2.1/js/all.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+      
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+        
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+        
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+        
+        });
+      });
+
+      });
+    </script>
 </head>
 <body>
   <header>
     <section class="hero is-primary">
       <div class="hero-head">
-          <nav class="navbar">
-            <div class="container">
-              <div class="navbar-brand">
-                  <a href="{{ url_for('main.index') }}" class="navbar-item">
-                    Home
-                  </a>
-                  <a href="{{ url_for('main.infrastructure') }}" class="navbar-item">
-                    Infrastructure
-                  </a>
-                  <a href="{{ url_for('main.software') }}" class="navbar-item">
-                    Software
-                  </a>
-                  <a href="{{ url_for('main.ci_cd') }}" class="navbar-item">
-                    CI/CD
-                  </a>
-                  <span class="navbar-item">
-                    <a class="button is-primary is-inverted" href="https://github.com/AbeYuki" target="_blank" rel="noopener noreferrer">
-                      <span class="icon">
-                        <i class="fab fa-github"></i>
-                      </span>
-                      <span>Github</span>
-                    </a>
-                  </span>
-                </div>
-              </div>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://www.aimhighergg.com">
+              <img src="static/images/raspberrypi-icon.png">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>              
+          </div>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a href="{{ url_for('main.index') }}" class="navbar-item">
+                Home
+              </a>
+              <a href="{{ url_for('main.infrastructure') }}" class="navbar-item">
+                Infrastructure
+              </a>
+              <a href="{{ url_for('main.software') }}" class="navbar-item">
+                Software
+              </a>
+              <a href="{{ url_for('main.ci_cd') }}" class="navbar-item">
+                CI/CD
+              </a>
             </div>
-          </nav>
-        </div>
+            <div class="navbar-end">
+              <span class="navbar-item">
+                <a class="button is-primary is-inverted" href="https://github.com/AbeYuki" target="_blank" rel="noopener noreferrer">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Github</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </nav>
+      </div>
     </section>
   </header>
 {% block index %}
