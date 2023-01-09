@@ -35,48 +35,72 @@
 </head>
 <body>
   <header>
-    <section class="hero is-success">
-      <div class="hero-head">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
-            <a class="navbar-item" href="https://www.aimhighergg.com">
-              <img src="static/images/raspberrypi-icon.png">
-            </a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>              
-          </div>
-          <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-              <a href="{{ url_for('main.index') }}" class="navbar-item">
-                Home
-              </a>
-              <a href="{{ url_for('main.infrastructure') }}" class="navbar-item">
-                Infrastructure
-              </a>
-              <a href="{{ url_for('main.software') }}" class="navbar-item">
-                Software
-              </a>
-              <a href="{{ url_for('main.ci_cd') }}" class="navbar-item">
-                CI/CD
-              </a>
-            </div>
-            <div class="navbar-end">
-              <span class="navbar-item">
-                <a class="button is-primary is-inverted" href="https://github.com/AbeYuki" target="_blank" rel="noopener noreferrer">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
-                  </span>
-                  <span>Github</span>
-                </a>
-              </span>
-            </div>
-          </div>
-        </nav>
+    <nav class="navbar is-success is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://www.aimhighergg.com">
+          <img src="static/images/raspberrypi-icon.png">
+        </a>
+        <a class="navbar-item is-hidden-tablet" href="{{ url_for('main.index') }}">
+          <span class="ion-ionic has-text-link" >
+            <i class="fas fa-lg fa-solid fa-house"></i>
+          </span>
+        </a>
+        <a class="navbar-item is-hidden-tablet" href="{{ url_for('main.infrastructure') }}">
+          <span class="ion-ionic has-text-info" >
+            <i class="fas fa-lg fa-solid fa-dharmachakra"></i>
+          </span>
+        </a>
+        <a class="navbar-item is-hidden-tablet" href="{{ url_for('main.software') }}">
+          <span class="ion-ionic has-text-warning" >
+            <i class="fas fa-lg fa-solid fa-code"></i>
+          </span>
+        </a>
+        <a class="navbar-item is-hidden-tablet" href="{{ url_for('main.ci_cd') }}">
+          <span class="ion-ionic has-text-danger" >
+            <i class="fas fa-lg fa-solid fa-recycle"></i>
+          </span>
+        </a>
+        <span class="navbar-item is-hidden-tablet">
+          <a class="button is-primary is-inverted" href="https://github.com/AbeYuki" target="_blank" rel="noopener noreferrer">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>Github</span>
+          </a>
+        </span>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>   
       </div>
-    </section>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a href="{{ url_for('main.index') }}" class="navbar-item">
+            Home
+          </a>
+          <a href="{{ url_for('main.infrastructure') }}" class="navbar-item">
+            Infrastructure
+          </a>
+          <a href="{{ url_for('main.software') }}" class="navbar-item">
+            Software
+          </a>
+          <a href="{{ url_for('main.ci_cd') }}" class="navbar-item">
+            CI/CD
+          </a>
+        </div>
+        <div class="navbar-end">
+          <span class="navbar-item">
+            <a class="button is-primary is-inverted" href="https://github.com/AbeYuki" target="_blank" rel="noopener noreferrer">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>Github</span>
+            </a>
+          </span>
+        </div>
+      </div>
+    </nav>
   </header>
 {% block index %}
 {% endblock %}
