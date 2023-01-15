@@ -51,7 +51,7 @@ commands:
               echo -n "${KUBECONFIG_DATA}" | base64 -d > ~/.kube/config
               kubectl config use-context ${CONTEXT_NAME}
   
-  setup_repositry:
+  setup_repository:
     steps:
       - run:
           name: "setup repositry"
@@ -67,7 +67,7 @@ jobs:
       - checkout
       - setup_kubectl
       - setup_kubeconfig
-      - setup_repositry
+      - setup_repository
       - kubernetes/create-or-update-resource:
           kustomize: true
           resource-file-path: kaniko/overlay/flask-portfolio
@@ -101,7 +101,7 @@ jobs:
       - checkout
       - setup_kubectl
       - setup_kubeconfig
-      - setup_repositry
+      - setup_repository
       - kubernetes/delete-resource:
           kustomize: true
           now: true

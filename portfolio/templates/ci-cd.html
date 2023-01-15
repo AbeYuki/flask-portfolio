@@ -29,9 +29,9 @@
                 <h1 class="title is-size-4">CI</h1>
                 <p class="is-size-6">
                   <strong>
-                    アプリケーションを管理している repository への push トリガーで、 circleci-runner へ連携され workflow を実行しています。<br>
+                    アプリケーションを管理している repository への push トリガーで、 CircleCI へ連携され workflow を実行しています。<br>
                     Build の運用は、アプリケーション用とビルド用(kaniko)の repository と分けていますが連動して動作します。<br>
-                    Build 環境構築は circleci の workflow が kubernetes に kaniko(Build repo) の deploy を行い、 Kaniko の中で app repo を clone し、build & push を行っています。 <br>
+                    Build 環境構築は CircleCI の self-host-runner が kubernetes に kaniko(Build repo) の deploy を行い、 Kaniko の中で app repo を clone し、build & push を行っています。 <br>
                     App repo: <a href="https://github.com/AbeYuki/flask-portfolio.git" target="_blank" rel="noopener noreferrer"> https://github.com/AbeYuki/flask-portfolio.git </a><br>
                     Build repo: <a href="https://github.com/AbeYuki/kaniko.git" target="_blank" rel="noopener noreferrer"> https://github.com/AbeYuki/kaniko.git </a><br>
                   </strong>
