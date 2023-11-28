@@ -1,8 +1,8 @@
 DOCKERFILE_PATH = .
 
-IMAGE_NAME = flask-portfolio
+IMAGE_NAME = portfolio
 
-VERSION = 1.1.0
+VERSION = 1.2.0
 
 REGISTRY = registry.gitlab.com/aimhighergg/docker-registry
 
