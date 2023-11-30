@@ -2,7 +2,7 @@ DOCKERFILE_PATH = .
 
 IMAGE_NAME = portfolio
 
-VERSION = 1.2.0
+VERSION = 1.2.1
 
 REGISTRY = registry.gitlab.com/aimhighergg/docker-registry
 
